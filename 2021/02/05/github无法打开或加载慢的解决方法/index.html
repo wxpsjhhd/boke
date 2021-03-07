@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, MSDC">
+    <meta name="keywords" content="github无法打开或加载慢的解决方法, MSDC">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | MSDC</title>
+    <title>github无法打开或加载慢的解决方法 | MSDC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">github无法打开或加载慢的解决方法</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +429,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/github/" class="post-category">
+                                github
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -443,7 +456,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-07
+                    2021-02-05
                 </div>
                 
 
@@ -464,19 +477,63 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h1 id="github无法打开或加载慢的解决方法"><a href="#github无法打开或加载慢的解决方法" class="headerlink" title="github无法打开或加载慢的解决方法"></a>github无法打开或加载慢的解决方法</h1><span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p><em>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。<br>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</em><br>最近也想鼓捣鼓捣一下，但却发现一个问题，根本进不去GitHub网站（难道我的念想刚萌芽就要被掐灭吗），没错就是下图<br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305133853283.png"><br>这可急坏了我，连忙求助百度，我也是集结多方教程（尝试各路大神的方法），最终解决了这个问题。<br>在此给出解决方法（亲测有用哟）</p>
+<h2 id="一-修改hosts文件"><a href="#一-修改hosts文件" class="headerlink" title="一:修改hosts文件"></a>一:修改hosts文件</h2><h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><p>1.找到hosts文件<br>路径为：<strong>C:\Windows\System32\drivers\etc\hosts</strong><br>2.编辑该文件<br>可以用记事本打开，将下面文本拷贝进去即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.100.133 assets-cdn.github.com</span><br><span class="line">151.101.100.133 raw.githubusercontent.com</span><br><span class="line">151.101.100.133 gist.githubusercontent.com</span><br><span class="line">151.101.100.133 cloud.githubusercontent.com</span><br><span class="line">151.101.100.133 camo.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>3.保存（再尝试能不能打开GitHub）</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>1.同样找到hosts文件<br>不过路径变为：**/etc/hosts**<br>2.编辑hosts文件<br>同样将下面代码块（和上面一样）拷贝进去并保存</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.100.133 assets-cdn.github.com</span><br><span class="line">151.101.100.133 raw.githubusercontent.com</span><br><span class="line">151.101.100.133 gist.githubusercontent.com</span><br><span class="line">151.101.100.133 cloud.githubusercontent.com</span><br><span class="line">151.101.100.133 camo.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>3.一般修改时会权限不够，需要获取root权限， 当然临时root权限也是OK的。<br>输入     vim /etc/hosts 进行修改</p>
+<h3 id="使用上述内容无法解决问题-自行查询相关IP"><a href="#使用上述内容无法解决问题-自行查询相关IP" class="headerlink" title="使用上述内容无法解决问题,自行查询相关IP"></a>使用上述内容无法解决问题,自行查询相关IP</h3><p>下面演示几个节点的IP查询方法,其他的自行查找</p>
+<p>首先确定GitHub的IP<br>打开</p>
+<p><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com" class="LinkCard">链接</a></p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134032797.png"><br>可以看到IP地址为：140.82.114.4（依据个人情况）<br>确定域名的IP:<br>打开<br><a target="_blank" rel="noopener" href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net" class="LinkCard">链接</a><br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134153763.png"><br>IP为192.232.69.194<br>确定静态资源的IP:<br>打开<br><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com/assets-cdn.github.com" class="LinkCard">链接</a><br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134239499.png"><br>依据上述方法一或者方法二给出hosts内容逐个查询，编写hosts文件<br>添加如下（依据个人情况编写,下面是我的）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82</span><span class="number">.114</span><span class="number">.4</span> github.com</span><br><span class="line"><span class="number">199.232</span><span class="number">.69</span><span class="number">.194</span> github.global.ssl.fastly.net</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.109</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.110</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.111</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars0.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars1.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars2.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars3.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars4.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars5.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars6.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars7.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="二-修改DNS解析"><a href="#二-修改DNS解析" class="headerlink" title="二:修改DNS解析"></a>二:修改DNS解析</h2><p>1.鼠标右键点击网络图标</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192211702.png"></p>
+<p>2.点击打开”网络和Internet”设置</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192038638.png"></p>
+<p>3.下拉找到网络和共享中心,点击进入</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192314232.png"></p>
+<p>4.点击红框选中部分</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192434702.png"></p>
+<p>5.点击属性</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192546615.png"></p>
+<p>6.选中Internet协议版本4,点击属性</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192818507.png"></p>
+<p>7.选择使用下面的DNS服务器地址,并输入DNS地址</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192919627.png"></p>
+<p>8.这里我推荐两个4.2.2.2(微软)和223.5.5.5(阿里),之后点击确定即可</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305193610294.png" alt="image-20210305193610294"></p>
+<h2 id="三-刷新DNS解析缓存"><a href="#三-刷新DNS解析缓存" class="headerlink" title="三:刷新DNS解析缓存"></a>三:刷新DNS解析缓存</h2><p>更改完hosts文件后,建议刷新一下DNS缓存</p>
+<p>1.win+R打开运行窗口,输入cmd,点击确定打开cmd窗口</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305135140751.png"></p>
+<p>2.输入下列命令并回车</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/20210303193228786.png"></p>
+<h2 id="四-github镜像访问"><a href="#四-github镜像访问" class="headerlink" title="四:github镜像访问"></a>四:github镜像访问</h2><p>这里提供两个github的镜像站,以备不测</p>
+<p><a target="_blank" rel="noopener" href="https://github.com.cnpmjs.org/" class="LinkCard">https://github.com.cnpmjs.org</a></p>
+<p><a target="_blank" rel="noopener" href="https://hub.fastgit.org/" class="LinkCard">https://hub.fastgit.org</a></p>
+<h2 id="五-新增"><a href="#五-新增" class="headerlink" title="五:新增"></a>五:新增</h2><p>1.打开DNS查询工具(这是一个查询域名映射关系的工具)</p>
+<p><a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns" class="LinkCard">点击前往</a></p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164529324.png"></p>
+<p>2.输入github.com,点击检测</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164417959.png"></p>
+<p>你也可以检测一下下面的网址(我就检测了一下github官网),然后安照下面的步骤走</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.global.ssl.fastly.net</span><br><span class="line">assets-cdn.github.com</span><br></pre></td></tr></table></figure>
+
+<p>3.找到查询结果中TTL值最小的,复制下其ip</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164649882.png"></p>
+<p>4.写入hosts文件,保存即可,关于如何写入前面已经提到,就不再赘述</p>
+<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164826147.png" alt="image-20210307164826147"></p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>此文仅为记载本人如何解决GitHub无法进入的问题</p>
+<p>建议自行查找IP,失效是正常的</p>
 
                 
             </div>
@@ -503,7 +560,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.msdc.top/2021/03/07/hello-world/">https://www.msdc.top/2021/03/07/hello-world/</a>
+                    <a href="https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -540,7 +597,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -713,34 +774,46 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/03/07/hello-world/">
+                <a href="/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="github无法打开或加载慢的解决方法">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">github无法打开或加载慢的解决方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            github无法打开或加载慢的解决方法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            MSDC
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/github/" class="post-category">
+                                    github
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -751,34 +824,46 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/07/hello-world/">
+                <a href="/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="github无法打开或加载慢的解决方法">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">github无法打开或加载慢的解决方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            github无法打开或加载慢的解决方法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            MSDC
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/github/" class="post-category">
+                                    github
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
