@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="github无法打开或加载慢的解决方法, MSDC">
+    <meta name="keywords" content="自建网盘搜索引擎, MSDC">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>github无法打开或加载慢的解决方法 | MSDC</title>
+    <title>自建网盘搜索引擎 | MSDC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">github无法打开或加载慢的解决方法</h1>
+                    <h1 class="description center-align post-title">自建网盘搜索引擎</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/github/">
-                                <span class="chip bg-color">github</span>
+                            <a href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">
+                                <span class="chip bg-color">搜索引擎</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BD%91%E7%9B%98/">
+                                <span class="chip bg-color">网盘</span>
                             </a>
                         
                     </div>
@@ -443,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/github/" class="post-category">
-                                github
+                            <a href="/categories/%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE/" class="post-category">
+                                无处安放
                             </a>
                         
                     </div>
@@ -456,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-05
+                    2021-01-07
                 </div>
                 
 
@@ -477,63 +481,22 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="github无法打开或加载慢的解决方法"><a href="#github无法打开或加载慢的解决方法" class="headerlink" title="github无法打开或加载慢的解决方法"></a>github无法打开或加载慢的解决方法</h1><span id="more"></span>
+                <h1 id="教你如何自建网盘资源搜索引擎"><a href="#教你如何自建网盘资源搜索引擎" class="headerlink" title="教你如何自建网盘资源搜索引擎"></a>教你如何自建网盘资源搜索引擎</h1><span id="more"></span>
 
-<p><em>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。<br>作为开源代码库以及版本控制系统，Github拥有超过900万开发者用户。随着越来越多的应用程序转移到了云上，Github已经成为了管理软件开发以及发现已有代码的首选方法。</em><br>最近也想鼓捣鼓捣一下，但却发现一个问题，根本进不去GitHub网站（难道我的念想刚萌芽就要被掐灭吗），没错就是下图<br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305133853283.png"><br>这可急坏了我，连忙求助百度，我也是集结多方教程（尝试各路大神的方法），最终解决了这个问题。<br>在此给出解决方法（亲测有用哟）</p>
-<h2 id="一-修改hosts文件"><a href="#一-修改hosts文件" class="headerlink" title="一:修改hosts文件"></a>一:修改hosts文件</h2><h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><p>1.找到hosts文件<br>路径为：<strong>C:\Windows\System32\drivers\etc\hosts</strong><br>2.编辑该文件<br>可以用记事本打开，将下面文本拷贝进去即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.100.133 assets-cdn.github.com</span><br><span class="line">151.101.100.133 raw.githubusercontent.com</span><br><span class="line">151.101.100.133 gist.githubusercontent.com</span><br><span class="line">151.101.100.133 cloud.githubusercontent.com</span><br><span class="line">151.101.100.133 camo.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<p>3.保存（再尝试能不能打开GitHub）</p>
-<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>1.同样找到hosts文件<br>不过路径变为：**/etc/hosts**<br>2.编辑hosts文件<br>同样将下面代码块（和上面一样）拷贝进去并保存</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.100.133 assets-cdn.github.com</span><br><span class="line">151.101.100.133 raw.githubusercontent.com</span><br><span class="line">151.101.100.133 gist.githubusercontent.com</span><br><span class="line">151.101.100.133 cloud.githubusercontent.com</span><br><span class="line">151.101.100.133 camo.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.100.133 avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
+<h3 id="1-利用Google-要能科学上网"><a href="#1-利用Google-要能科学上网" class="headerlink" title="1.利用Google(要能科学上网)"></a>1.利用Google(要能科学上网)</h3><p><a href="https://cse.google.com/cse/" class="LinkCard" target="_blank">点击这里直达</a></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7559cf809c4cf41e9f0c6c79d7db4885.png" alt="image-20201114100907681"></p>
+<h3 id="2-点击开始吧"><a href="#2-点击开始吧" class="headerlink" title="2.点击开始吧"></a>2.点击开始吧</h3><p>进入如下界面</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/1ae2e326d170098cd6399ebb6914aaa8.png" alt="image-20201114100937412"></p>
+<h3 id="3-点击新建搜索引擎"><a href="#3-点击新建搜索引擎" class="headerlink" title="3.点击新建搜索引擎"></a>3.点击新建搜索引擎</h3><p><img src="https://img-blog.csdnimg.cn/img_convert/56e6799e4eb5d859ce4c14e988318eda.png" alt="image-20201114101047442"></p>
+<h3 id="4-依次进行配置"><a href="#4-依次进行配置" class="headerlink" title="4.依次进行配置"></a>4.依次进行配置</h3><p>注意第一个是要搜索的网站</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c2c6d2ec8573ddbe46875698e95678b9.png" alt="image-20201114101417580"></p>
+<h3 id="5-创建完毕后-点击修改搜索引擎-选择刚才创建的-找到搜索引擎ID-也可以点击获取代码-插入代码即可"><a href="#5-创建完毕后-点击修改搜索引擎-选择刚才创建的-找到搜索引擎ID-也可以点击获取代码-插入代码即可" class="headerlink" title="5.创建完毕后,点击修改搜索引擎,选择刚才创建的,找到搜索引擎ID(也可以点击获取代码,插入代码即可)"></a>5.创建完毕后,点击修改搜索引擎,选择刚才创建的,找到搜索引擎ID(也可以点击获取代码,插入代码即可)</h3><p><img src="https://img-blog.csdnimg.cn/img_convert/46d801c5e960346b65910892afbf9cc7.png" alt="image-20201114103410456"></p>
+<p>外观不满意的话可以自行修改,最后附上代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line">        #main&#123;</span><br><span class="line"><span class="css">            <span class="attribute">width</span>:<span class="number">750px</span>;</span></span><br><span class="line"><span class="css">            <span class="attribute">margin</span>:<span class="number">20px</span> auto;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#main</span> <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="css">            <span class="attribute">font-size</span>:<span class="number">25px</span>;</span></span><br><span class="line"><span class="css">            <span class="attribute">font-weight</span>:bold;</span></span><br><span class="line"><span class="css">            <span class="attribute">margin</span>-<span class="selector-tag">button</span>:<span class="number">100px</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">百度网盘资源搜索器</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> cx = <span class="string">&#x27;你的搜索引擎ID&#x27;</span>;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> gcse = <span class="built_in">document</span>.createElement(<span class="string">&#x27;script&#x27;</span>);</span></span><br><span class="line"><span class="javascript">    gcse.type = <span class="string">&#x27;text/javascript&#x27;</span>;</span></span><br><span class="line"><span class="javascript">    gcse.async = <span class="literal">true</span>;</span></span><br><span class="line"><span class="javascript">    gcse.src = <span class="string">&#x27;https://cse.google.com/cse.js?cx=&#x27;</span> + cx;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&#x27;script&#x27;</span>)[<span class="number">0</span>];</span></span><br><span class="line">    s.parentNode.insertBefore(gcse, s);</span><br><span class="line">  &#125;)();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">gcse:search</span>&gt;</span><span class="tag">&lt;/<span class="name">gcse:search</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>3.一般修改时会权限不够，需要获取root权限， 当然临时root权限也是OK的。<br>输入     vim /etc/hosts 进行修改</p>
-<h3 id="使用上述内容无法解决问题-自行查询相关IP"><a href="#使用上述内容无法解决问题-自行查询相关IP" class="headerlink" title="使用上述内容无法解决问题,自行查询相关IP"></a>使用上述内容无法解决问题,自行查询相关IP</h3><p>下面演示几个节点的IP查询方法,其他的自行查找</p>
-<p>首先确定GitHub的IP<br>打开</p>
-<p><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com" class="LinkCard">链接</a></p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134032797.png"><br>可以看到IP地址为：140.82.114.4（依据个人情况）<br>确定域名的IP:<br>打开<br><a target="_blank" rel="noopener" href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net" class="LinkCard">链接</a><br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134153763.png"><br>IP为192.232.69.194<br>确定静态资源的IP:<br>打开<br><a target="_blank" rel="noopener" href="https://github.com.ipaddress.com/assets-cdn.github.com" class="LinkCard">链接</a><br><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305134239499.png"><br>依据上述方法一或者方法二给出hosts内容逐个查询，编写hosts文件<br>添加如下（依据个人情况编写,下面是我的）</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82</span><span class="number">.114</span><span class="number">.4</span> github.com</span><br><span class="line"><span class="number">199.232</span><span class="number">.69</span><span class="number">.194</span> github.global.ssl.fastly.net</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.109</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.110</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.111</span><span class="number">.153</span> github.github.io</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars0.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars1.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars2.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars3.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars4.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars5.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars6.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars7.githubusercontent.com</span><br><span class="line"><span class="number">185.199</span><span class="number">.108</span><span class="number">.153</span> avatars8.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<h2 id="二-修改DNS解析"><a href="#二-修改DNS解析" class="headerlink" title="二:修改DNS解析"></a>二:修改DNS解析</h2><p>1.鼠标右键点击网络图标</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192211702.png"></p>
-<p>2.点击打开”网络和Internet”设置</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192038638.png"></p>
-<p>3.下拉找到网络和共享中心,点击进入</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192314232.png"></p>
-<p>4.点击红框选中部分</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192434702.png"></p>
-<p>5.点击属性</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192546615.png"></p>
-<p>6.选中Internet协议版本4,点击属性</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192818507.png"></p>
-<p>7.选择使用下面的DNS服务器地址,并输入DNS地址</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305192919627.png"></p>
-<p>8.这里我推荐两个4.2.2.2(微软)和223.5.5.5(阿里),之后点击确定即可</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305193610294.png" alt="image-20210305193610294"></p>
-<h2 id="三-刷新DNS解析缓存"><a href="#三-刷新DNS解析缓存" class="headerlink" title="三:刷新DNS解析缓存"></a>三:刷新DNS解析缓存</h2><p>更改完hosts文件后,建议刷新一下DNS缓存</p>
-<p>1.win+R打开运行窗口,输入cmd,点击确定打开cmd窗口</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210305135140751.png"></p>
-<p>2.输入下列命令并回车</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/20210303193228786.png"></p>
-<h2 id="四-github镜像访问"><a href="#四-github镜像访问" class="headerlink" title="四:github镜像访问"></a>四:github镜像访问</h2><p>这里提供两个github的镜像站,以备不测</p>
-<p><a target="_blank" rel="noopener" href="https://github.com.cnpmjs.org/" class="LinkCard">https://github.com.cnpmjs.org</a></p>
-<p><a target="_blank" rel="noopener" href="https://hub.fastgit.org/" class="LinkCard">https://hub.fastgit.org</a></p>
-<h2 id="五-新增"><a href="#五-新增" class="headerlink" title="五:新增"></a>五:新增</h2><p>1.打开DNS查询工具(这是一个查询域名映射关系的工具)</p>
-<p><a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns" class="LinkCard">点击前往</a></p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164529324.png"></p>
-<p>2.输入github.com,点击检测</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164417959.png"></p>
-<p>你也可以检测一下下面的网址(我就检测了一下github官网),然后安照下面的步骤走</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github.global.ssl.fastly.net</span><br><span class="line">assets-cdn.github.com</span><br></pre></td></tr></table></figure>
-
-<p>3.找到查询结果中TTL值最小的,复制下其ip</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164649882.png"></p>
-<p>4.写入hosts文件,保存即可,关于如何写入前面已经提到,就不再赘述</p>
-<p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210307164826147.png" alt="image-20210307164826147"></p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>此文仅为记载本人如何解决GitHub无法进入的问题</p>
-<p>建议自行查找IP,失效是正常的</p>
 
                 
             </div>
@@ -560,7 +523,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</a>
+                    <a href="https://www.msdc.top/2021/01/07/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">https://www.msdc.top/2021/01/07/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -598,8 +561,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/github/">
-                                    <span class="chip bg-color">github</span>
+                                <a href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/">
+                                    <span class="chip bg-color">搜索引擎</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BD%91%E7%9B%98/">
+                                    <span class="chip bg-color">网盘</span>
                                 </a>
                             
                         </div>
@@ -773,55 +740,6 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/02/25/Windows10%E4%B8%8B%E6%90%AD%E5%BB%BA%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Windows10下搭建汇编语言开发环境">
-                        
-                        <span class="card-title">Windows10下搭建汇编语言开发环境</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Windows10下搭建汇编语言开发环境
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    汇编语言
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">
-                        <span class="chip bg-color">汇编语言</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/2021/01/28/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%BA%90%E5%9C%B0%E5%9D%80%E9%93%BE%E6%8E%A5/">
                     <div class="card-image">
                         
@@ -838,9 +756,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -858,6 +776,55 @@
                     
                     <a href="/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/">
                         <span class="chip bg-color">视频解析</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/01/06/%E8%A7%A3%E5%86%B3%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8D%B8%E8%BD%BD%E5%90%8E%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="解决谷歌浏览器卸载后无法重新安装的问题">
+                        
+                        <span class="card-title">解决谷歌浏览器卸载后无法重新安装的问题</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            解决谷歌浏览器卸载后无法重新安装的问题
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE/" class="post-category">
+                                    无处安放
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Google/">
+                        <span class="chip bg-color">Google</span>
                     </a>
                     
                 </div>
