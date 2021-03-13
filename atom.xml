@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MSDC</title>
+  
+  
+  <link href="https://www.msdc.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.msdc.top/"/>
+  <updated>2021-03-08T08:07:26.930Z</updated>
+  <id>https://www.msdc.top/</id>
+  
+  <author>
+    <name>MSDC</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git报错及解决方法盘点</title>
+    <link href="https://www.msdc.top/2021/03/08/git%E6%8A%A5%E9%94%99%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E7%9B%98%E7%82%B9/"/>
+    <id>https://www.msdc.top/2021/03/08/git%E6%8A%A5%E9%94%99%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E7%9B%98%E7%82%B9/</id>
+    <published>2021-03-08T05:10:18.000Z</published>
+    <updated>2021-03-08T08:07:26.930Z</updated>
+    
+    
+    <summary type="html">git报错及解决方法盘点</summary>
+    
+    
+    
+    <category term="github" scheme="https://www.msdc.top/categories/github/"/>
+    
+    
+    <category term="git" scheme="https://www.msdc.top/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows10下搭建汇编语言开发环境</title>
+    <link href="https://www.msdc.top/2021/02/25/Windows10%E4%B8%8B%E6%90%AD%E5%BB%BA%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>https://www.msdc.top/2021/02/25/Windows10%E4%B8%8B%E6%90%AD%E5%BB%BA%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
+    <published>2021-02-25T02:17:53.000Z</published>
+    <updated>2021-03-08T01:43:30.165Z</updated>
+    
+    
+    <summary type="html">Windows10下搭建汇编语言开发环境</summary>
+    
+    
+    
+    <category term="汇编语言" scheme="https://www.msdc.top/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="汇编语言" scheme="https://www.msdc.top/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github无法打开或加载慢的解决方法</title>
+    <link href="https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://www.msdc.top/2021/02/05/github%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E6%88%96%E5%8A%A0%E8%BD%BD%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <published>2021-02-05T05:34:58.000Z</published>
+    <updated>2021-03-07T23:39:03.483Z</updated>
+    
+    
+    <summary type="html">github无法打开或加载慢的解决方法</summary>
+    
+    
+    
+    <category term="github" scheme="https://www.msdc.top/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://www.msdc.top/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教你如何获取腾讯视频源地址链接</title>
+    <link href="https://www.msdc.top/2021/01/28/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%BA%90%E5%9C%B0%E5%9D%80%E9%93%BE%E6%8E%A5/"/>
+    <id>https://www.msdc.top/2021/01/28/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E6%BA%90%E5%9C%B0%E5%9D%80%E9%93%BE%E6%8E%A5/</id>
+    <published>2021-01-28T01:31:37.000Z</published>
+    <updated>2021-01-28T03:12:54.616Z</updated>
+    
+    
+    <summary type="html">教你如何获取腾讯视频源地址链接</summary>
+    
+    
+    
+    <category term="无处安放" scheme="https://www.msdc.top/categories/%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE/"/>
+    
+    
+    <category term="视频解析" scheme="https://www.msdc.top/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自建网盘搜索引擎</title>
+    <link href="https://www.msdc.top/2021/01/07/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    <id>https://www.msdc.top/2021/01/07/%E8%87%AA%E5%BB%BA%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</id>
+    <published>2021-01-07T03:18:14.000Z</published>
+    <updated>2021-03-06T14:22:45.429Z</updated>
+    
+    
+    <summary type="html">本文旨在搭建网盘资源搜索引擎</summary>
+    
+    
+    
+    <category term="无处安放" scheme="https://www.msdc.top/categories/%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE/"/>
+    
+    
+    <category term="搜索引擎" scheme="https://www.msdc.top/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    
+    <category term="网盘" scheme="https://www.msdc.top/tags/%E7%BD%91%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决谷歌浏览器卸载后无法重新安装的问题</title>
+    <link href="https://www.msdc.top/2021/01/06/%E8%A7%A3%E5%86%B3%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8D%B8%E8%BD%BD%E5%90%8E%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.msdc.top/2021/01/06/%E8%A7%A3%E5%86%B3%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8D%B8%E8%BD%BD%E5%90%8E%E6%97%A0%E6%B3%95%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2021-01-06T07:17:35.000Z</published>
+    <updated>2021-01-28T01:34:15.365Z</updated>
+    
+    
+    <summary type="html">本文旨在解决谷歌浏览器卸载后无法重新安装的问题.</summary>
+    
+    
+    
+    <category term="无处安放" scheme="https://www.msdc.top/categories/%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE/"/>
+    
+    
+    <category term="Google" scheme="https://www.msdc.top/tags/Google/"/>
+    
+  </entry>
+  
+</feed>
