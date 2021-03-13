@@ -239,9 +239,9 @@ mark {
 .container .row {
     margin-bottom: 0;
 }
-
+/*背景颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #c1ccd3 0%, #a4b7c7 100%);
 }
 
 .text-color {
@@ -592,7 +592,7 @@ header .go-back i {
     font-size: 2.5rem;
     font-weight: 400;
 }
-
+/* 动态切换背景颜色. */
 @-webkit-keyframes rainbow {
 
     0%,
