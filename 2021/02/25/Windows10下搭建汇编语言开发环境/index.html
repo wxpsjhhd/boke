@@ -472,6 +472,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -519,11 +522,24 @@
 <p>使用快捷键Ctrl+F查找其中的[autoexec]部分(一般在文件末尾)</p>
 <p><img src="https://i.loli.net/2021/02/25/PFvrz5jt4GAaDQb.png"></p>
 <p>在文件中添加下列内容并保存</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MOUNT F D:\DOSBox\Debug</span><br><span class="line">set PATH&#x3D;%PATH%;F:\MASM;</span><br><span class="line">F:</span><br><span class="line">cd F:\ASM</span><br><span class="line">cls</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">MOUNT F D:\DOSBox\Debug
+set PATH&#x3D;%PATH%;F:\MASM;
+F:
+cd F:\ASM
+cls<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210302185912863.png"></p>
 <p>命令解释:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#挂载工作目录挂载到虚拟盘符F(虚拟盘符可自定义,命令不区分大小写)</span><br><span class="line">MOUNT F D:\DOSBox\Debug</span><br><span class="line">#添加系统临时变量(此时的F代表的是D:\DOSBox\Debug）</span><br><span class="line">set PATH&#x3D;%PATH%;F:\MASM; </span><br><span class="line">#转到F盘符</span><br><span class="line">F:</span><br><span class="line">#切换到F:\ASM目录</span><br><span class="line">cd F:\ASM</span><br><span class="line">#执行一次清屏</span><br><span class="line">cls</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">#挂载工作目录挂载到虚拟盘符F(虚拟盘符可自定义,命令不区分大小写)
+MOUNT F D:\DOSBox\Debug
+#添加系统临时变量(此时的F代表的是D:\DOSBox\Debug）
+set PATH&#x3D;%PATH%;F:\MASM; 
+#转到F盘符
+F:
+#切换到F:\ASM目录
+cd F:\ASM
+#执行一次清屏
+cls<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>如果不加cls,打开会是这样</p>
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/GtgYexwQulLnOKk.png"></p>
@@ -600,30 +616,54 @@
 <p>使用快捷键Ctrl+F查找windowresolution字段</p>
 <p><img src="https://i.loli.net/2021/02/25/8hrbIxNBJZQ723k.png"></p>
 <p>将</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">windowresolution&#x3D;original</span><br><span class="line">output&#x3D;surface</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">windowresolution&#x3D;original
+output&#x3D;surface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">windowresolution&#x3D;800x500  #800x500为自定义大小,可修改</span><br><span class="line">output&#x3D;opengl </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">windowresolution&#x3D;800x500  #800x500为自定义大小,可修改
+output&#x3D;opengl <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>注意:不用删除原来的语句,在前面加上#注释掉即可</p>
 <p><img src="https://i.loli.net/2021/02/25/YZwN2LOQPTuG8Wv.png"></p>
 <p>保存后,重启DOSBox生效</p>
 <h3 id="创建并编辑文件"><a href="#创建并编辑文件" class="headerlink" title="创建并编辑文件"></a>创建并编辑文件</h3><p>关于创建并编辑文件,如果你的工作目录(挂载的目录)有EDIT.COM文件(我提供的汇编工具包中有),那么你就可以在DOSBox中创建并编辑文件,如果没有请使用我提供的工具包或者耐心往下看.</p>
 <h4 id="使用DOSBox创建并编辑文件-不推荐"><a href="#使用DOSBox创建并编辑文件-不推荐" class="headerlink" title="使用DOSBox创建并编辑文件(不推荐)"></a>使用DOSBox创建并编辑文件(不推荐)</h4><p>打开DOSBox使用下面命令创建并编辑test.asm文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">edit test.asm</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">edit test.asm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://i.loli.net/2021/02/25/ZWr6DIB4qxb9VEd.png"></p>
 <p>回车后进入下面界面即可进行编辑(注意:鼠标箭头只能在编辑器里活动,想将鼠标退出来的话可以用Ctrl+F10组合键退出)</p>
 <p><img src="https://i.loli.net/2021/02/25/WYMSUboDf82N7cG.png"></p>
 <h4 id="使用记事本创建并编辑文件-其他编辑器也可以"><a href="#使用记事本创建并编辑文件-其他编辑器也可以" class="headerlink" title="使用记事本创建并编辑文件(其他编辑器也可以)"></a>使用记事本创建并编辑文件(其他编辑器也可以)</h4><p>下面以此种方式创建test.asm文件</p>
 <p>新建文本文档,将下面代码复制到里面并保存</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">datas segment</span><br><span class="line">buf db&#39;Hello, World!$&#39;</span><br><span class="line">datas ends</span><br><span class="line"></span><br><span class="line">stacks segment stack</span><br><span class="line">db 200 dup(0)</span><br><span class="line">stacks ends</span><br><span class="line"></span><br><span class="line">codes segment</span><br><span class="line">assume cs:codes,ds:datas,ss:stacks</span><br><span class="line">start:</span><br><span class="line">mov ax,datas</span><br><span class="line">mov ds,ax</span><br><span class="line"></span><br><span class="line">mov dx,seg buf</span><br><span class="line">lea dx,buf</span><br><span class="line">mov ah,09h</span><br><span class="line">int 21h</span><br><span class="line"></span><br><span class="line">mov ah,4ch</span><br><span class="line">int 21h</span><br><span class="line">codes ends</span><br><span class="line">end start</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">datas segment
+buf db&#39;Hello, World!$&#39;
+datas ends
+
+stacks segment stack
+db 200 dup(0)
+stacks ends
+
+codes segment
+assume cs:codes,ds:datas,ss:stacks
+start:
+mov ax,datas
+mov ds,ax
+
+mov dx,seg buf
+lea dx,buf
+mov ah,09h
+int 21h
+
+mov ah,4ch
+int 21h
+codes ends
+end start<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://i.loli.net/2021/02/25/jrcGQTxs8hgupvU.png"></p>
 <p>之后重命名为test.asm</p>
 <p><img src="https://i.loli.net/2021/02/25/lfQUBhXntJYV5qK.png"></p>
 <h3 id="编译调试"><a href="#编译调试" class="headerlink" title="编译调试"></a>编译调试</h3><p>打开DOSBox输入下面命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masm test.asm</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">masm test.asm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>回车后会询问文件名,建议直接回车</p>
 <p>编译程序提示输入交叉引用文件的名称,这个文件同列表文件一样,是编译器将源程序编译为目标文件过程中产生的中间结果.可以让编译器不生成这个文件,直接按Enter键即可</p>
@@ -636,13 +676,13 @@
 <p>打开ASM文件夹查看如下</p>
 <p><img src="https://i.loli.net/2021/02/25/TdPkfD7oRp5aZrB.png"></p>
 <p>继续输入命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">link test.obj</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">link test.obj<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://i.loli.net/2021/02/25/d5LQbCi9n1AOPSk.png"></p>
 <p>运行完毕,查看ASM文件夹</p>
 <p><img src="https://i.loli.net/2021/02/25/P2G6sZqBlDQvKOE.png"></p>
 <p>继续执行下列命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">debug test.exe</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">debug test.exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://i.loli.net/2021/02/25/7zr4gBpDmUGi9nx.png"></p>
 <h3 id="debug的简单使用"><a href="#debug的简单使用" class="headerlink" title="debug的简单使用"></a>debug的简单使用</h3><p>debug是Dos、Windows提供的实模式(8086方式)程序的调试工具</p>
@@ -750,7 +790,7 @@
 </tr>
 </tbody></table>
 <p>改变标志位的值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rf</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">rf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210301095739288.png"></p>
 <h5 id="改变CPU寄存器的内容"><a href="#改变CPU寄存器的内容" class="headerlink" title="改变CPU寄存器的内容"></a>改变CPU寄存器的内容</h5><h6 id="改变ax的值"><a href="#改变ax的值" class="headerlink" title="改变ax的值"></a>改变ax的值</h6><p>直接回车退出修改</p>
@@ -766,7 +806,8 @@
 <p>在一进入debug后,用D命令直接查看,将列出debug预设的地址处的内容</p>
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210228123326498.png"></p>
 <p>使用d 段地址:偏移地址查看(以d 1000:0为例)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">格式:d 段地址:偏移地址</span><br><span class="line">使用&quot;d 段地址:偏移地址&quot;的格式来查看,debug将列出从指定内存单元开始的128个内存单元的内容</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">格式:d 段地址:偏移地址
+使用&quot;d 段地址:偏移地址&quot;的格式来查看,debug将列出从指定内存单元开始的128个内存单元的内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210228122452594.png"></p>
 <p>在使用”d 段地址:偏移地址”之后,接着使用D命令,可列出后续的内容</p>
@@ -787,7 +828,7 @@
 <p>也可以用E命令向内存中写入字符串</p>
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210228133636393.png"></p>
 <p>用E命令向内存中写入机器码,用T命令执行内存中的机器码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">e 1000:0 b8 01 00 b9 02 00 01 c8</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">e 1000:0 b8 01 00 b9 02 00 01 c8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <table>
 <thead>
@@ -814,12 +855,12 @@
 <p>用E命令向从1000:0开始的内存单元中写入了8个字节的机器码<br>用D命令查看内存1000:0~1000:1f中的数据(从数据的角度看一下写入的内容)<br>用U命令查看从1000:0开始的内存单元中的机器指令和他们所对应的汇编指令</p>
 </blockquote>
 <h4 id="U命令"><a href="#U命令" class="headerlink" title="U命令"></a>U命令</h4><p>对机器代码反汇编显示</p>
-<h5 id="按地址反汇编"><a href="#按地址反汇编" class="headerlink" title="按地址反汇编"></a>按地址反汇编</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">u 地址</span><br></pre></td></tr></table></figure>
+<h5 id="按地址反汇编"><a href="#按地址反汇编" class="headerlink" title="按地址反汇编"></a>按地址反汇编</h5><pre class="line-numbers language-none"><code class="language-none">u 地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>该命令从指定地址开始,反汇编32个字节,若地址省略,则从上一个U命令的最后一个指令的下一个单元开始显示32个字节</p>
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210301100802300.png"></p>
 <p><img src="https://gitee.com/wxpgitee/images/raw/master/image-20210301100844123.png"></p>
-<h5 id="按范围反汇编"><a href="#按范围反汇编" class="headerlink" title="按范围反汇编"></a>按范围反汇编</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">u 范围</span><br></pre></td></tr></table></figure>
+<h5 id="按范围反汇编"><a href="#按范围反汇编" class="headerlink" title="按范围反汇编"></a>按范围反汇编</h5><pre class="line-numbers language-none"><code class="language-none">u 范围<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 

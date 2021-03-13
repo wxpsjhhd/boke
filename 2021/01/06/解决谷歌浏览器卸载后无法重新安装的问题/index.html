@@ -472,6 +472,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -493,7 +496,49 @@
 <p>3.点击“一键清理”，再安装Google（如果还报错，尝试重启电脑）</p>
 <h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>1.新建一个文本文件（不建议使用记事本，我用的是notepad++,直接在桌面建了一个）</p>
 <p>2.将以下代码复制粘贴在该文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">;WARNING, this file will remove Google Chrome registry entries  </span><br><span class="line"></span><br><span class="line">;from your Windows Registry. Consider backing up your registry before</span><br><span class="line"></span><br><span class="line">; using this file: http://support.microsoft.com/kb/322756</span><br><span class="line"></span><br><span class="line">; To run this file, save it as <span class="string">&#x27;remove.reg&#x27;</span> on your desktop and double-click it.</span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromeHTML] </span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\chrome.exe] </span><br><span class="line"></span><br><span class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;Chrome&quot;</span>=-</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\SOFTWARE\Classes\ChromeHTML] </span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\chrome.exe] </span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;Chrome&quot;</span>=-</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Chrome]</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\Software\Google\Update\Clients\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\Software\Google\Update\ClientState\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\Software\Google\Update\Clients\&#123;00058422-BABE-4310-9B8B-B8DEB5D0B68A&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_CURRENT_USER\Software\Google\Update\ClientState\&#123;00058422-BABE-4310-9B8B-B8DEB5D0B68A&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\Update\ClientStateMedium\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\Update\Clients\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\Update\ClientState\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br><span class="line"></span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Google\Update\Clients\&#123;8A69D345-D564-463c-AFF1-A69D9E530F96&#125;]</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Windows Registry Editor Version <span class="token number">5.00</span>
+
+<span class="token punctuation">;</span>WARNING, this <span class="token function">file</span> will remove Google Chrome registry entries  
+
+<span class="token punctuation">;</span>from your Windows Registry. Consider backing up your registry before
+
+<span class="token punctuation">;</span> using this file: http://support.microsoft.com/kb/322756
+
+<span class="token punctuation">;</span> To run this file, save it as <span class="token string">'remove.reg'</span> on your desktop and double-click it.
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Classes<span class="token punctuation">\</span>ChromeHTML<span class="token punctuation">]</span> 
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span>StartMenuInternet<span class="token punctuation">\</span>chrome.exe<span class="token punctuation">]</span> 
+
+<span class="token punctuation">[</span>HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>RegisteredApplications<span class="token punctuation">]</span>
+
+<span class="token string">"Chrome"</span><span class="token operator">=</span>-
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Classes<span class="token punctuation">\</span>ChromeHTML<span class="token punctuation">]</span> 
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span>StartMenuInternet<span class="token punctuation">\</span>chrome.exe<span class="token punctuation">]</span> 
+
+<span class="token punctuation">[</span>HKEY_CURRENT_USER<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>RegisteredApplications<span class="token punctuation">]</span>
+
+<span class="token string">"Chrome"</span><span class="token operator">=</span>-
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>Software<span class="token punctuation">\</span>Microsoft<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>CurrentVersion<span class="token punctuation">\</span>Uninstall<span class="token punctuation">\</span>Chrome<span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>Software<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>Software<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>ClientState<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>Software<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>00058422-BABE-4310-9B8B-B8DEB5D0B68A<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_CURRENT_USER<span class="token punctuation">\</span>Software<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>ClientState<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>00058422-BABE-4310-9B8B-B8DEB5D0B68A<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>ClientStateMedium<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>ClientState<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>-HKEY_LOCAL_MACHINE<span class="token punctuation">\</span>SOFTWARE<span class="token punctuation">\</span>Wow6432Node<span class="token punctuation">\</span>Google<span class="token punctuation">\</span>Update<span class="token punctuation">\</span>Clients<span class="token punctuation">\</span><span class="token punctuation">&#123;</span>8A69D345-D564-463c-AFF1-A69D9E530F96<span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>3.将该文件命名为rm.reg</p>
 <p>4.双击运行（可能会出来一些选项，我默认了），再重装Google即可</p>

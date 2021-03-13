@@ -472,6 +472,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -479,29 +482,32 @@
             <div id="articleContent">
                 <h1 id="git报错及解决方法盘点"><a href="#git报错及解决方法盘点" class="headerlink" title="git报错及解决方法盘点"></a>git报错及解决方法盘点</h1><span id="more"></span>
 
-<h2 id="错误一"><a href="#错误一" class="headerlink" title="错误一"></a>错误一</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#39;https:&#x2F;&#x2F;github.com&#x2F;.......git&#x2F;&#39;: Failed to connect to github. com port 443: Timed out</span><br></pre></td></tr></table></figure>
+<h2 id="错误一"><a href="#错误一" class="headerlink" title="错误一"></a>错误一</h2><pre class="line-numbers language-none"><code class="language-none">fatal: unable to access &#39;https:&#x2F;&#x2F;github.com&#x2F;.......git&#x2F;&#39;: Failed to connect to github. com port 443: Timed out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="解决方案一"><a href="#解决方案一" class="headerlink" title="解决方案一"></a>解决方案一</h3><p> 1.查看看你的git配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global -l </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global -l <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>如果你没有任何与https代理相关的内容,例如https_proxy = …,则问题不在这里. 如果您有与https代理相关的内容,请将其从〜/ .gitconfig文件中删除,然后重试 </p>
 <p>2.如果仍然不起作用,请取消设置环境变量 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">env|grep -i proxy  </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">env|grep -i proxy  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>你应该有一行或几行https_proxy = … 使用以下内容逐个取消设置:取消设置https_proxy(或HTTPS_PROXY,具体取决于变量的名称)</p>
 <p>3.再次检查环境变量    </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">env|grep -i proxy</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">env|grep -i proxy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>如果它没有显示任何你应该是好的. 注意:此解决方案可以应用于http和https代理问题.只是变量名称从https更改为http </p>
 <h3 id="解决方案二"><a href="#解决方案二" class="headerlink" title="解决方案二"></a>解决方案二</h3><p>1.手动配置git的代理.git客户端输入如下两个命令即可 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080 </span><br><span class="line">git config --global https.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global http.proxy http://127.0.0.1:1080 
+git config --global https.proxy http://127.0.0.1:1080<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>2.取消代理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy  </span><br><span class="line">git config --global --unset https.proxy  </span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global --unset http.proxy  
+git config --global --unset https.proxy  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="错误二"><a href="#错误二" class="headerlink" title="错误二"></a>错误二</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: unable to access &#39;https:&#x2F;&#x2F;github.com&#x2F;.......git&#x2F;&#39;: failed to receive handshake ssl&#x2F;tls connection failed</span><br></pre></td></tr></table></figure>
+<h2 id="错误二"><a href="#错误二" class="headerlink" title="错误二"></a>错误二</h2><pre class="line-numbers language-none"><code class="language-none">fatal: unable to access &#39;https:&#x2F;&#x2F;github.com&#x2F;.......git&#x2F;&#39;: failed to receive handshake ssl&#x2F;tls connection failed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslBackend &quot;openssl&quot;</span><br><span class="line">git config --global http.sslCAInfo [path to .pem file]</span><br></pre></td></tr></table></figure>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><pre class="line-numbers language-none"><code class="language-none">git config --global http.sslBackend &quot;openssl&quot;
+git config --global http.sslCAInfo [path to .pem file]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>暂时就遇到这些问题,后续遇到会补上</p>
 
