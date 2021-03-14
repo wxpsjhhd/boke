@@ -109,6 +109,13 @@
   </url>
   
   <url>
+    <loc>https://www.msdc.top/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</loc>
+    <lastmod>2021-03-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.msdc.top/tags/git/</loc>
     <lastmod>2021-03-14</lastmod>
     <changefreq>daily</changefreq>
@@ -116,7 +123,7 @@
   </url>
   
   <url>
-    <loc>https://www.msdc.top/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</loc>
+    <loc>https://www.msdc.top/tags/Google/</loc>
     <lastmod>2021-03-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -131,13 +138,6 @@
   
   <url>
     <loc>https://www.msdc.top/tags/%E7%BD%91%E7%9B%98/</loc>
-    <lastmod>2021-03-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.msdc.top/tags/Google/</loc>
     <lastmod>2021-03-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
